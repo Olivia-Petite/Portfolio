@@ -33,3 +33,4 @@ window.onload = function() {
     });
 };
 /* I wanna add 'Karen_Gillan.jpg','Self_Portrait.jpg','Blacklist.jpg','Walter_White.jpg','Captain_Jack.jpg','Matt.jpg' to people_drawings.html */
+/* also wanna add 'Karen_Gillan.jpg','Lenore.jpg','Headless_Horseman.jpg','Iris.jpg' to additional file for digital art */
