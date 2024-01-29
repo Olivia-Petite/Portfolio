@@ -12,7 +12,7 @@ window.onload = function() {
         'Luna_and_sounder_drawing.jpg',
         'Annie_drawing.jpg',
         'Lucy_puppy.jpg',
-        'Guinea_ping.jpg',
+        'Guinea_pig.jpg',
         'Apollo_ink_drawing.jpg'
     ];
 
@@ -27,8 +27,9 @@ window.onload = function() {
 
         var td = document.createElement('td');
         var img = document.createElement('img');
-        img.src = 'pets/' + image;
+        img.src = 'Artwork/' + image;
         td.appendChild(img);
         tr.appendChild(td);
     });
 };
+/* I wanna add 'Karen_Gillan.jpg','Self_Portrait.jpg','Blacklist.jpg','Walter_White.jpg','Captain_Jack.jpg','Matt.jpg' to people_drawings.html */
