@@ -1,5 +1,5 @@
-a {
-  text-decoration: none;
+* {
+  box-sizing: border-box; /* Include padding and border in width and height */
 }
 
 head {
@@ -10,19 +10,15 @@ body {
   background-color: rgb(144, 184, 168);
   margin: 0;
   padding: 0;
-}
-
-p {
-  color: red;
-  padding: 20px;
-}
-
-footer {
-  background-color: red;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hotbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(52, 90, 134);
   width: 100%;
   height: 10vh;
@@ -30,29 +26,35 @@ footer {
   opacity: 70%; /* This will make the hotbar slightly transparent */
 }
 
-.hotbar-btn {
-  width: 100%;
-}
-
-.hotbar-btn tr {
+.hotbar-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.hotbar-btn td {
-    flex: 1;
-    text-align: center;
-    transition: background-color 0.5s ease;
-    border-radius: 10px; /* This will make the td elements have softer rounded corners */
-    padding: 7px; /* This will add some space around the content */
+.hotbar h1 {
+  white-space: nowrap; /* This will prevent the text from wrapping */
 }
 
-.hotbar-btn td:hover {
-    background-color: rgb(92, 134, 52);
-    cursor: pointer; /* This will change the cursor to a hand when you hover over the td elements */
+.hotbar-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.hotbar-btn a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px; /* This will add some space between the buttons */
+  transition: transform 0.3s ease; /* This will animate the transform property over 0.3 seconds */
+  backface-visibility: hidden;
+  transform: translateZ(0); 
+}
+
+.hotbar-btn a:hover {
+  color: rgb(144, 184, 168);
+  transform: scale(1.1); /* This will scale the button up to 110% of its original size */
 }
 
 .image-table {
@@ -78,8 +80,11 @@ footer {
 }
 
 footer {
-  flex-shrink: 0; /* This will prevent the footer from shrinking if there's not enough space */
-  height: 10vh;
-  width: 100%;
-  margin-top: 3%;
+  text-align: center; /* This will center the text horizontally */
+  padding: 20px; /* This will add some space around the text */
+  background-color: #f2f2f2; /* This will set a light gray background color */
+  color: #333; /* This will set a dark gray text color */
+  font-size: 1.2em; /* This will make the text slightly larger */
+  width: 100%; /* This will make the footer take up the full width of the page */
+  bottom: 0; /* This will position the footer at the bottom of the page */
 }
